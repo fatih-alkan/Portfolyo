@@ -1,0 +1,42 @@
+@import "tailwindcss";
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: Courier New, Courier, monospace;
+}
+@theme {
+  --color-dark-bg: #171c31;
+  --color-def-yellow: #dcfb88;
+  --color-soft-bg: #1c2136;
+  --color-text-gray: #cdcdcd;
+  --color-def-gray: #9d9d9d;
+  --breakpoint-tablet: 768px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-phone: 500px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 20s linear infinite;
+  display: inline-flex;
+}
