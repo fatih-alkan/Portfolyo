@@ -33,7 +33,7 @@ export default function HomeBanner({
                 <div className="flex gap-16 text-white">
                     <a href={github} className="hover:text-def-yellow hover:scale-130 transition-all duration-300"><FaGithub size={32} /></a>
                     <a href={linkedin} className="hover:text-def-yellow hover:scale-130 transition-all duration-300"><FaLinkedin size={32} /></a>
-                    <a href={'mailto:${email}'} className="hover:text-def-yellow hover:scale-130 transition-all duration-300"><FaEnvelope size={32} /></a>
+                    <a href={`mailto:${email}`} className="hover:text-def-yellow hover:scale-130 transition-all duration-300"><FaEnvelope size={32} /></a>
                 </div>
             </div>
         </>
